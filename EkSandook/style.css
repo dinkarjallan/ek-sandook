@@ -163,6 +163,7 @@ section.content article.post1-caption p{
 section.content article.post1-caption p>a{
     border: 1px solid #10100E;
     border-radius: 25px;
+    outline: none;
     font-weight: 700;
     background-color: #10100E;
     color: #DCD9C4;
@@ -173,8 +174,9 @@ section.content article.post1-caption p>a{
     top: 0px;
     left: 390px;
 }
-section.content article.post1-caption p>a:hover{
+section.content article.post1-caption p>a:hover, section.content article.post1-caption p>a:focus{
     color: #fff;
+    outline: none;
 }
     /* post 2 */
 section.content article.post2-img{
@@ -207,6 +209,7 @@ section.content article.post2-caption p{
 section.content article.post2-caption p>a{
     border: 1px solid #000;
     border-radius: 25px;
+    outline: none;
     font-weight: 700;
     background-color: #10100E;
     color: #DCD9C4;
@@ -217,8 +220,9 @@ section.content article.post2-caption p>a{
     top: 0px;
     left: 390px;
 }
-section.content article.post2-caption p>a:hover{
+section.content article.post2-caption p>a:hover, section.content article.post2-caption p>a:focus{
     color: #fff;
+    outline: none;
 }
 
 /* 'specials' styling */
@@ -262,6 +266,7 @@ section.specials article.post1-caption p{
 section.specials article.post1-caption p>a{
     border: 1px solid #000;
     border-radius: 25px;
+    outline: none;
     font-weight: 700;
     background-color: #10100E;
     color: #DCD9C4;
@@ -272,8 +277,9 @@ section.specials article.post1-caption p>a{
     top: 0px;
     left: 390px;
 }
-section.specials article.post1-caption p>a:hover{
+section.specials article.post1-caption p>a:hover, section.specials article.post1-caption p>a:focus{
     color: #fff;
+    outline:none;
 }
 section.specials article.post1-caption p span{
     font-weight: 700;
@@ -311,6 +317,7 @@ section.specials article.post2-caption p{
 section.specials article.post2-caption p>a{
     border: 1px solid #000;
     border-radius: 25px;
+    outline: none;
     font-weight: 700;
     background-color: #10100E;
     color: #DCD9C4;
@@ -321,10 +328,11 @@ section.specials article.post2-caption p>a{
     top: 0px;
     left: 390px;
 }
-section.specials article.post2-caption p>a:hover{
+section.specials article.post2-caption p>a:hover, section.specials article.post2-caption p>a:focus{
     color: #fff;
-    
+    outline: none;
 }
+
 section.specials article.post2-caption p span{
     font-weight: 700;
 }
@@ -505,5 +513,27 @@ section.specials article.post2-caption p span{
 	.footer-distributed .footer-center i{
 		margin-left: 0;
 	}
+
+}
+
+/* website responsive media queries */
+    /* laptop 1024 */
+@media only screen and (max-width: 1024px){
+
+}
+    /* tablet 768 */
+@media only screen and (max-width: 768px){
+
+}
+    /* mobile 425 */
+@media only screen and (max-width: 425px){
+
+}
+    /* mobile 375 */
+@media only screen and (max-width: 375px){
+
+}
+    /* mobile 320 */
+@media only screen and (max-width: 320px){
 
 }
