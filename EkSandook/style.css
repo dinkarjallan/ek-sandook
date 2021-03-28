@@ -7,10 +7,11 @@
     box-sizing: border-box;
 }
 html{
-    height: 865%;
+    height: fit-content;
     position: relative;
     top: 3rem;
     background-color: #ece3c6;
+    scroll-behavior: smooth;
     font-family: 'Comic Neue', cursive;
 }
 body{
@@ -27,6 +28,7 @@ nav#navbar{
     z-index: 3;
     position: fixed;
     top: 0;
+    box-shadow: inset 0px -3px 10px .1px rgba(0, 0, 0, .3);
 } 
 nav#navbar div#navlist{
     display: flex;
@@ -132,6 +134,8 @@ section.content article.post1-img{
 section.content article.post1-img img.image{
     width: 100%;   
     border-radius: 15%;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .7);
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .7);
 }
 section.content article.post1-caption{
     display: block;
@@ -149,6 +153,8 @@ section.content article.post1-caption p{
     text-transform: capitalize;
     border-radius: 10px;
     background-color: #DCD9C4;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .7);
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .7);
 }
 section.content article.post1-caption p>a{
     border: 1px solid #10100E;
@@ -160,9 +166,7 @@ section.content article.post1-caption p>a{
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px 15px;
-    position: relative;
-    top: 0px;
-    left: 390px;
+    position: static;
 }
 section.content article.post1-caption p>a:hover, section.content article.post1-caption p>a:focus{
     color: #fff;
@@ -178,6 +182,8 @@ section.content article.post2-img{
 section.content article.post2-img img.image{
     width: 100%;   
     border-radius: 15%;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .7);
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .7);
 }
 section.content article.post2-caption{
     display: block;
@@ -195,6 +201,8 @@ section.content article.post2-caption p{
     text-transform: capitalize;
     border-radius: 10px;
     background-color: #DCD9C4;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .7);
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .7);
 }
 section.content article.post2-caption p>a{
     border: 1px solid #000;
@@ -206,9 +214,7 @@ section.content article.post2-caption p>a{
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px 15px;
-    position: relative;
-    top: 0px;
-    left: 390px;
+    position: static;
 }
 section.content article.post2-caption p>a:hover, section.content article.post2-caption p>a:focus{
     color: #fff;
@@ -224,6 +230,7 @@ h2.heading{
 }
 section.specials{
     margin: 10%;
+    /* overflow-x: hidden; */
 }
     /* post-1 */
 section.specials article.post1-img{
@@ -235,6 +242,8 @@ section.specials article.post1-img{
 section.specials article.post1-img img.image{
     width: 100%;   
     border-radius: 15%;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .7);
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .7);
 }
 section.specials article.post1-caption{
     display: block;
@@ -252,6 +261,8 @@ section.specials article.post1-caption p{
     text-transform: capitalize;
     border-radius: 10px;
     background-color: #DCD9C4;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .7);
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .7);
 }
 section.specials article.post1-caption p>a{
     border: 1px solid #000;
@@ -263,9 +274,7 @@ section.specials article.post1-caption p>a{
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px 15px;
-    position: relative;
-    top: 0px;
-    left: 390px;
+    position: static;
 }
 section.specials article.post1-caption p>a:hover, section.specials article.post1-caption p>a:focus{
     color: #fff;
@@ -285,6 +294,8 @@ section.specials article.post2-img{
 section.specials article.post2-img img.image{
     width: 100%;   
     border-radius: 15%;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .7);
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .7);
 }
 section.specials article.post2-caption{
     display: block;
@@ -303,6 +314,8 @@ section.specials article.post2-caption p{
     text-transform: capitalize;
     border-radius: 10px;
     background-color: #DCD9C4;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .7);
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .7);
 }
 section.specials article.post2-caption p>a{
     border: 1px solid #000;
@@ -314,9 +327,7 @@ section.specials article.post2-caption p>a{
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px 15px;
-    position: relative;
-    top: 0px;
-    left: 390px;
+    position: static;
 }
 section.specials article.post2-caption p>a:hover, section.specials article.post2-caption p>a:focus{
     color: #fff;
@@ -521,20 +532,25 @@ section.specials article.post2-caption p span{
         text-transform: uppercase;
         font-weight: 700;
         text-align: center;
+        margin-top: 9rem;
         font-size: 3.5rem;
     }
     /* header layout */
     header.header{
+        width: 100%;
+        margin: 0 auto;
         position: absolute;
         top: 0px;
-        margin: 0 -4.2%;
+        left: 0px;
+        margin: 0 auto;
     }
     section.head{
+        padding: 2% 5% 5%;
         display:block;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        height: 70vh;
+        height: 100%;
         /* padding: ; */
     }
     section.head img.head-img{
@@ -568,12 +584,13 @@ section.specials article.post2-caption p span{
         display: block;
         margin-bottom: 7%;
         width: 40%;
-        height: 369.55px;
+        height: fit-content;
         float: right;
     }
     section.content article.post1-caption p{
         font-size: 14px;
         position: relative;
+        height: 100%;
         padding: 25px;
         top: 40px;
         left: -50px;
@@ -592,9 +609,7 @@ section.specials article.post2-caption p span{
         text-decoration: none;
         text-transform: uppercase;
         padding: 10px 15px;
-        position: relative;
-        top: 0px;
-        left: 165px;
+        position: static;
     }
         /* post-2 */
     section.content article.post2-img{
@@ -611,12 +626,13 @@ section.specials article.post2-caption p span{
         display: block;
         margin-bottom: 7%;
         width: 40%;
-        height: 368.09px;
+        height: fit-content;
         float: left;
     }
     section.content article.post2-caption p{
         font-size: 14px;
         position: relative;
+        height: 100%;
         padding: 25px;
         top: 40px;
         right: -30px;
@@ -635,9 +651,7 @@ section.specials article.post2-caption p span{
         text-decoration: none;
         text-transform: uppercase;
         padding: 10px 15px;
-        position: relative;
-        top: 0px;
-        left: 165px;
+        position: static;
     }
     /* specials layout */
         /* post-1 */
@@ -655,12 +669,13 @@ section.specials article.post2-caption p span{
         display: block;
         margin-bottom: 7%;
         width: 40%;
-        height: 369.55px;
+        height: fit-content;
         float: right;
     }
     section.specials article.post1-caption p{
         font-size: 14px;
         position: relative;
+        height: 100%;
         padding: 25px;
         top: 75px;
         left: -50px;
@@ -679,9 +694,7 @@ section.specials article.post2-caption p span{
         text-decoration: none;
         text-transform: uppercase;
         padding: 10px 15px;
-        position: relative;
-        top: 0px;
-        left: 165px;
+        position: static;
     }
         /* post-2 */
     section.specials article.post2-img{
@@ -698,13 +711,13 @@ section.specials article.post2-caption p span{
         display: block;
         margin-bottom: 7%;
         width: 40%;
-        height: 368.09px;
+        height: fit-content;
         float: left;
     }
     section.specials article.post2-caption p{
         font-size: 14px;
         overflow-y: scroll;
-        height: 433.89px;
+        height: 100%;
         position: relative;
         padding: 25px;
         top: 30px;
@@ -724,19 +737,22 @@ section.specials article.post2-caption p span{
         text-decoration: none;
         text-transform: uppercase;
         padding: 10px 15px;
-        position: relative;
-        top: 0px;
-        left: 165px;
+        position: static;
     }
 
 }
     /* tablet 768 */
 @media only screen and (max-width: 768px){
     /* header layout */
+    div.background-desktop{
+        height: 50rem;
+    }
     header.header{
+        width: 100%;
+        margin: 0 auto;
         position: absolute;
         top: 0px;
-        left: 60px;
+        left: 0px;
     }
     /* sub styles */
     section.sub p.sub-text{
@@ -750,6 +766,9 @@ section.specials article.post2-caption p span{
         margin: 0 18%;
     }
     /* content styles */
+    section.content{
+        height: fit-content;
+    }
         /* post-1 */
     section.content article.post1-img{
         display: inline-block;
@@ -763,14 +782,15 @@ section.specials article.post2-caption p span{
     }
     section.content article.post1-caption{
         display: block;
-        margin-bottom: 7%;
+        margin-bottom: 60%;
         width: 80%;
-        height: 369.55px;
+        height: fit-content;
         float: right;
     }
     section.content article.post1-caption p{
         font-size: 14px;
         position: relative;
+        height: 100%;
         padding: 25px;
         top: 40px;
         left: -50px;
@@ -789,9 +809,7 @@ section.specials article.post2-caption p span{
         text-decoration: none;
         text-transform: uppercase;
         padding: 10px 15px;
-        position: relative;
-        top: 0px;
-        left: 165px;
+        position: static;
     }
         /* post-2 */
     section.content article.post2-img{
@@ -806,14 +824,15 @@ section.specials article.post2-caption p span{
     }
     section.content article.post2-caption{
         display: block;
-        margin-bottom: 7%;
+        margin-bottom: 60%;
         width: 80%;
-        height: 368.09px;
+        height: fit-content;
         float: left;
     }
     section.content article.post2-caption p{
         font-size: 14px;
         position: relative;
+        height: 100%;
         padding: 25px;
         top: 40px;
         right: -73px;
@@ -832,13 +851,11 @@ section.specials article.post2-caption p span{
         text-decoration: none;
         text-transform: uppercase;
         padding: 10px 15px;
-        position: relative;
-        top: 0px;
-        left: 165px;
+        position: static;
     }
     /* specials layout */
     section.specials{
-        height: 135rem;
+        height: 300vh;
     }
         /* post-1 */
     section.specials article.post1-img{
@@ -853,14 +870,15 @@ section.specials article.post2-caption p span{
     }
     section.specials article.post1-caption{
         display: block;
-        margin-bottom: 7%;
+        margin-bottom: 60%;
         width: 80%;
-        height: 369.55px;
+        height: fit-content;
         float: right;
     }
     section.specials article.post1-caption p{
         font-size: 14px;
         position: relative;
+        height: 100%;
         padding: 25px;
         top: 40px;
         left: -60px;
@@ -879,9 +897,7 @@ section.specials article.post2-caption p span{
         text-decoration: none;
         text-transform: uppercase;
         padding: 10px 15px;
-        position: relative;
-        top: 0px;
-        left: 165px;
+        position: static;
     }
         /* post-2 */
     section.specials article.post2-img{
@@ -896,15 +912,15 @@ section.specials article.post2-caption p span{
     }
     section.specials article.post2-caption{
         display: block;
-        margin-bottom: 7%;
+        margin-bottom: 60%;
         width: 80%;
-        height: 368.09px;
+        height: fit-content;
         float: left;
     }
     section.specials article.post2-caption p{
         font-size: 14px;
         overflow-y: scroll;
-        height: 433.89px;
+        height: 100%;
         position: relative;
         padding: 25px;
         top: 40px;
@@ -924,16 +940,18 @@ section.specials article.post2-caption p span{
         text-decoration: none;
         text-transform: uppercase;
         padding: 10px 15px;
-        position: relative;
-        top: 0px;
-        left: 165px;
+        position: static;
     }
 }
     /* mobile 425 */
 @media only screen and (max-width: 425px){
     /* header layout */
+    div.background-desktop{
+        height: 35rem;
+    }
     header.header{
-        width: 442px;
+        width: 100%;
+        margin: 0 auto;
         position: absolute;
         top: 0px;
         left: 0px;
@@ -943,14 +961,14 @@ section.specials article.post2-caption p span{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        height: 60vh;
+        height: 20rem;
     }
     section.head h1.head-text{
         display: block;
-        font-size: 4rem;
+        font-size: 3.9rem;
         text-align: center;
         margin: 0 auto;
-        width: 416px;
+        width: 20rem;
     }
     /* sub styles */
     section.sub p.sub-text{
@@ -966,7 +984,7 @@ section.specials article.post2-caption p span{
     /* content styles */
     section.content{
         margin: 10%;
-        height: 87rem;
+        height: fit-content;
     }
         /* post-1 */
     section.content article.post1-img{
@@ -981,14 +999,15 @@ section.specials article.post2-caption p span{
     }
     section.content article.post1-caption{
         display: block;
-        margin-bottom: 7%;
+        margin-bottom: 60%;
         width: 90%;
-        height: 369.55px;
+        height: fit-content;
         float: right;
     }
     section.content article.post1-caption p{
         font-size: 14px;
         position: relative;
+        height: 100%;
         padding: 25px;
         top: 40px;
         left: -14px;
@@ -1007,9 +1026,7 @@ section.specials article.post2-caption p span{
         text-decoration: none;
         text-transform: uppercase;
         padding: 10px 15px;
-        position: relative;
-        top: 0px;
-        left: 165px;
+        position: static;
     }
         /* post-2 */
     section.content article.post2-img{
@@ -1024,14 +1041,15 @@ section.specials article.post2-caption p span{
     }
     section.content article.post2-caption{
         display: block;
-        margin-bottom: 7%;
+        margin-bottom: 60%;
         width: 90%;
-        height: 368.09px;
+        height: fit-content;
         float: left;
     }
     section.content article.post2-caption p{
         font-size: 14px;
         position: relative;
+        height: 100%;
         padding: 25px;
         top: 40px;
         right: -20px;
@@ -1050,13 +1068,11 @@ section.specials article.post2-caption p span{
         text-decoration: none;
         text-transform: uppercase;
         padding: 10px 15px;
-        position: relative;
-        top: 0px;
-        left: 165px;
+        position: static;
     }
     /* specials layout */
     section.specials{
-        height: 110rem;
+        height: 300vh;
     }
         /* post-1 */
     section.specials article.post1-img{
@@ -1071,14 +1087,15 @@ section.specials article.post2-caption p span{
     }
     section.specials article.post1-caption{
         display: block;
-        margin-bottom: 7%;
+        margin-bottom: 60%;
         width: 90%;
-        height: 369.55px;
+        height: fit-content;
         float: right;
     }
     section.specials article.post1-caption p{
         font-size: 14px;
         position: relative;
+        height: 100%;
         padding: 25px;
         top: 40px;
         left: -18px;
@@ -1097,9 +1114,7 @@ section.specials article.post2-caption p span{
         text-decoration: none;
         text-transform: uppercase;
         padding: 10px 15px;
-        position: relative;
-        top: 0px;
-        left: 165px;
+        position: static;
     }
         /* post-2 */
     section.specials article.post2-img{
@@ -1114,15 +1129,15 @@ section.specials article.post2-caption p span{
     }
     section.specials article.post2-caption{
         display: block;
-        margin-bottom: 7%;
+        margin-bottom: 60%;
         width: 90%;
-        height: 368.09px;
+        height: fit-content;
         float: left;
     }
     section.specials article.post2-caption p{
         font-size: 14px;
         overflow-y: visible;
-        height: 556px;
+        height: 100%;
         position: relative;
         padding: 25px;
         top: 40px;
@@ -1142,16 +1157,18 @@ section.specials article.post2-caption p span{
         text-decoration: none;
         text-transform: uppercase;
         padding: 10px 15px;
-        position: relative;
-        top: 0px;
-        left: 165px;
+        position: static;
     }
 }
     /* mobile 375 */
 @media only screen and (max-width: 375px){
     /* header layout */
+    div.background-desktop{
+        height: 35rem;
+    }
     header.header{
-        width: 390px;
+        width: 100%;
+        margin: 0 auto;
         position: absolute;
         top: 0px;
         left: 0px;
@@ -1161,14 +1178,14 @@ section.specials article.post2-caption p span{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        height: 60vh;
+        height: 20rem;
     }
     section.head h1.head-text{
         display: block;
         font-size: 3.5rem;
         text-align: center;
         margin: 0 auto;
-        width: 366px;
+        width: 100%;
     }
     /* sub styles */
     section.sub p.sub-text{
@@ -1186,7 +1203,7 @@ section.specials article.post2-caption p span{
     /* content styles */
     section.content{
         margin: 10%;
-        height: 87rem;
+        height: fit-content;
     }
         /* post-1 */
     section.content article.post1-img{
@@ -1201,14 +1218,15 @@ section.specials article.post2-caption p span{
     }
     section.content article.post1-caption{
         display: block;
-        margin-bottom: 7%;
+        margin-bottom: 60%;
         width: 90%;
-        height: 490px;
+        height: fit-content;
         float: right;
     }
     section.content article.post1-caption p{
         font-size: 14px;
         position: relative;
+        height: 100%;
         padding: 25px;
         top: 40px;
         left: -14px;
@@ -1227,9 +1245,7 @@ section.specials article.post2-caption p span{
         text-decoration: none;
         text-transform: uppercase;
         padding: 10px 15px;
-        position: relative;
-        top: 0px;
-        left: 125px;
+        position: static;
     }
         /* post-2 */
     section.content article.post2-img{
@@ -1244,14 +1260,15 @@ section.specials article.post2-caption p span{
     }
     section.content article.post2-caption{
         display: block;
-        margin-bottom: 7%;
+        margin-bottom: 60%;
         width: 90%;
-        height: 490px;
+        height: fit-content;
         float: left;
     }
     section.content article.post2-caption p{
         font-size: 14px;
         position: relative;
+        height: 100%;
         padding: 25px;
         top: 40px;
         right: -20px;
@@ -1270,13 +1287,11 @@ section.specials article.post2-caption p span{
         text-decoration: none;
         text-transform: uppercase;
         padding: 10px 15px;
-        position: relative;
-        top: 0px;
-        left: 125px;
+        position: static;
     }
     /* specials layout */
     section.specials{
-        height: 110rem;
+        height: 300vh;
     }
         /* post-1 */
     section.specials article.post1-img{
@@ -1291,14 +1306,15 @@ section.specials article.post2-caption p span{
     }
     section.specials article.post1-caption{
         display: block;
-        margin-bottom: 7%;
+        margin-bottom: 60%;
         width: 90%;
-        height: 490px;
+        height: fit-content;
         float: right;
     }
     section.specials article.post1-caption p{
         font-size: 14px;
         position: relative;
+        height: 100%;
         padding: 25px;
         top: 40px;
         left: -18px;
@@ -1317,9 +1333,7 @@ section.specials article.post2-caption p span{
         text-decoration: none;
         text-transform: uppercase;
         padding: 10px 15px;
-        position: relative;
-        top: 0px;
-        left: 125px;
+        position: static;
     }
         /* post-2 */
     section.specials article.post2-img{
@@ -1334,15 +1348,15 @@ section.specials article.post2-caption p span{
     }
     section.specials article.post2-caption{
         display: block;
-        margin-bottom: 7%;
+        margin-bottom: 60%;
         width: 90%;
-        height: 620px;
+        height: fit-content;
         float: left;
     }
     section.specials article.post2-caption p{
         font-size: 14px;
         overflow-y: visible;
-        height: 556px;
+        height: 100%;
         position: relative;
         padding: 25px 25px 60px;
         top: 40px;
@@ -1362,16 +1376,22 @@ section.specials article.post2-caption p span{
         text-decoration: none;
         text-transform: uppercase;
         padding: 10px 15px;
-        position: relative;
-        top: 0px;
-        left: 125px;
+        position: static;
     }
 }
     /* mobile 320 */
 @media only screen and (max-width: 320px){
+    /* navbar style */
+    nav#navbar div#navlist a{
+        font-size: .8rem;
+    }
     /* header layout */
+    div.background-desktop{
+        height: 35rem;
+    }
     header.header{
-        width: 334px;
+        width: 100%;
+        margin: 0 auto;
         position: absolute;
         top: 0px;
         left: 0px;
@@ -1381,14 +1401,14 @@ section.specials article.post2-caption p span{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        height: 60vh;
+        height: 20rem;
     }
     section.head h1.head-text{
         display: block;
         font-size: 3.5rem;
         text-align: center;
         margin: 0 auto;
-        width: 312px;
+        width: 100%;
     }
     /* sub styles */
     section.sub p.sub-text{
@@ -1407,7 +1427,7 @@ section.specials article.post2-caption p span{
     /* content styles */
     section.content{
         margin: 10%;
-        height: 87rem;
+        height: fit-content;
     }
         /* post-1 */
     section.content article.post1-img{
@@ -1422,14 +1442,15 @@ section.specials article.post2-caption p span{
     }
     section.content article.post1-caption{
         display: block;
-        margin-bottom: 7%;
+        margin-bottom: 60%;
         width: 100%;
-        height: 490px;
+        height: fit-content;
         float: right;
     }
     section.content article.post1-caption p{
         font-size: 14px;
         position: relative;
+        height:100%;
         width:100%;
         padding: 25px;
         top: 40px;
@@ -1449,9 +1470,7 @@ section.specials article.post2-caption p span{
         text-decoration: none;
         text-transform: uppercase;
         padding: 10px 15px;
-        position: relative;
-        top: 0px;
-        left: 125px;
+        position: static;
     }
         /* post-2 */
     section.content article.post2-img{
@@ -1466,14 +1485,15 @@ section.specials article.post2-caption p span{
     }
     section.content article.post2-caption{
         display: block;
-        margin-bottom: 7%;
+        margin-bottom: 60%;
         width: 100%;
-        height: 490px;
+        height: fit-content;
         float: left;
     }
     section.content article.post2-caption p{
         font-size: 14px;
         position: relative;
+        height: 100%;
         padding: 25px;
         width: 100%;
         top: 40px;
@@ -1493,13 +1513,11 @@ section.specials article.post2-caption p span{
         text-decoration: none;
         text-transform: uppercase;
         padding: 10px 15px;
-        position: relative;
-        top: 0px;
-        left: 125px;
+        position: static;
     }
     /* specials layout */
     section.specials{
-        height: 110rem;
+        height: 300vh;
     }
         /* post-1 */
     section.specials article.post1-img{
@@ -1514,14 +1532,15 @@ section.specials article.post2-caption p span{
     }
     section.specials article.post1-caption{
         display: block;
-        margin-bottom: 7%;
+        margin-bottom: 60%;
         width: 100%;
-        height: 490px;
+        height: fit-content;
         float: right;
     }
     section.specials article.post1-caption p{
         font-size: 14px;
         position: relative;
+        height: 100%;
         padding: 25px;
         width: 100%;
         top: 40px;
@@ -1541,9 +1560,7 @@ section.specials article.post2-caption p span{
         text-decoration: none;
         text-transform: uppercase;
         padding: 10px 15px;
-        position: relative;
-        top: 0px;
-        left: 125px;
+        position: static;
     }
         /* post-2 */
     section.specials article.post2-img{
@@ -1558,15 +1575,15 @@ section.specials article.post2-caption p span{
     }
     section.specials article.post2-caption{
         display: block;
-        margin-bottom: 7%;
+        margin-bottom: 60%;
         width: 100%;
-        height: 620px;
+        height: fit-content;
         float: left;
     }
     section.specials article.post2-caption p{
         font-size: 14px;
         overflow-y: visible;
-        height: 620px;
+        height: 100%;
         width: 100%;
         position: relative;
         padding: 25px 25px 60px;
@@ -1587,9 +1604,7 @@ section.specials article.post2-caption p span{
         text-decoration: none;
         text-transform: uppercase;
         padding: 10px 15px;
-        position: relative;
-        top: 0px;
-        left: 125px;
+        position: static;
     }
     /* footer styles */
     .footer-distributed h3{
